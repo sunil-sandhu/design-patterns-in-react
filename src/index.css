@@ -1,5 +1,6 @@
 select,
 input,
-button {
+button,
+div {
   border: 1px solid;
 }
