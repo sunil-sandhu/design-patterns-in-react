@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="App">
       <h1>How would you like to contact someone?</h1>
-      <select onChange={(e) => handleContactType(e.target.value)} style={{ border: "1px solid" }}>
+      <select onChange={(e) => handleContactType(e.target.value)}>
         {handlerFields.map((handler) => (
           <option key={handler.type}>{handler.type}</option>
         ))}
@@ -55,15 +55,13 @@ function App() {
                 <input
                   onChange={(e) => handleInput(field, e.target.value)}
                   name={field}
-                  style={{ marginLeft: "2px", border: "1px solid" }}
+                  style={{ marginLeft: "2px" }}
                 />
               </div>
             ))
         : ""}
 
-      <button onClick={sendForm} style={{ border: "1px solid" }}>
-        SEND!
-      </button>
+      <button onClick={sendForm}>SEND!</button>
 
       <p>{resultData}</p>
     </div>

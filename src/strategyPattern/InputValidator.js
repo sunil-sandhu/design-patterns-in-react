@@ -5,11 +5,7 @@ const InputValidator = ({ type, func }) => {
   return (
     <div>
       <label htmlFor="input">{`Validate ${type}`}</label>
-      <input
-        name="input"
-        onChange={(e) => setUserInput(e.target.value)}
-        style={{ border: "1px solid" }}
-      />
+      <input name="input" onChange={(e) => setUserInput(e.target.value)} />
       <button onClick={() => func(userInput)}>Validate Input</button>
     </div>
   );

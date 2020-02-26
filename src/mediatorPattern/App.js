@@ -20,7 +20,7 @@ const Colleague = ({ colleagueObj, name, colleagues, messages, fetchMessages }) 
   };
 
   return (
-    <div style={{ border: "1px solid", marginBottom: "10px", padding: "10px" }}>
+    <div style={{ marginBottom: "10px", padding: "10px" }}>
       <p>
         <strong>{name}</strong>
       </p>

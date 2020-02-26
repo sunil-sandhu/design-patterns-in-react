@@ -12,7 +12,7 @@ const User = (props) => {
   };
 
   return (
-    <div style={{ border: "1px solid" }}>
+    <div>
       <select onChange={(e) => setSendMessageTo(e.target.value)}>
         {usersList
           .filter((user) => user !== thisUser)
@@ -21,7 +21,7 @@ const User = (props) => {
           ))}
       </select>
       <label>Write a message</label>
-      <input onChange={(e) => setUserInput(e.target.value)} style={{ border: "1px solid" }}></input>
+      <input onChange={(e) => setUserInput(e.target.value)}></input>
       <button onClick={handleNotifyUsers}>Send Message</button>
       <h3>Your Notifications</h3>
       <ul>

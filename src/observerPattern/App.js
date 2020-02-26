@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <input onChange={(e) => handleState(e.target.value)} style={{ border: "1px solid" }} />
+      <input onChange={(e) => handleState(e.target.value)} />
       <UserOutput data={subject.collection[0]} />
     </div>
   );
