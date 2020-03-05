@@ -1,10 +1,10 @@
 import React from "react";
-import FormFactory from "./factoryPattern/formFactory";
+import Form from "./Form";
 
 function App() {
   return (
     <div className="App">
-      <FormFactory type={"contact"} />
+      <Form />
     </div>
   );
 }
