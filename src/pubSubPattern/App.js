@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import User from "./pubSubPattern/User";
-import { pubSub } from "./pubSubPattern/pubSub";
+import User from "./User";
+import { pubSub } from "./pubSub";
 
 const pubsub = pubSub();
 const users = ["Sunil", "Jimmy"];
